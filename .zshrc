@@ -136,6 +136,7 @@ ZSH_HIGHLIGHT_STYLES[globbing]='fg=#a9568d'
 
 # To style the path arguments
 ZSH_HIGHLIGHT_STYLES[path]='fg=#e8b8fc'
+ZSH_HIGHLIGHT_STYLES[autodirectory]='fg=#e8b8fc'
 
 # To style the quoted arguments
 ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#d695b8'
@@ -148,6 +149,8 @@ ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=#d695d1'
 # To style the builtin commands
 ZSH_HIGHLIGHT_STYLES[builtin]='fg=#d695d1'
 
+# To style the less and greater than symbols
+ZSH_HIGHLIGHT_STYLES[redirection]='fg=#c72366'
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
