@@ -110,16 +110,23 @@ source $ZSH/oh-my-zsh.sh
 # ----------------------------- ALIASES -------------------------------------
 alias icat='kitty +kitten icat'
 alias pserver='sudo python3 -m http.server'
-
+alias uzshrep='cp ~/.zshrc ~/Desktop/my-zsh-config/'
 
 # ----------------------------- SYNTAX HIGHLIGHTER CONFIG ---------------------------------- 
 
+# Defining the zsh highlighting styles variable
+typeset -A ZSH_HIGHLIGHT_STYLES
+
 # To style the unknown or error tokens
-ZSH_HIGHLIGHT_STYLES[unkown-token]='fg=#c32678'
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=#cf34be'
 
 # To style the aliases
 ZSH_HIGHLIGHT_STYLES[alias]='fg=#c76eff'
 ZSH_HIGHLIGHT_STYLES[global-alias]='fg=#c76eff'
+
+# To style the commands
+ZSH_HIGHLIGHT_STYLES[command]='fg=#c76eff'
+ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=#c76eff'
 
 # To style the pre commands (sudo, exec)
 ZSH_HIGHLIGHT_STYLES[precommand]='fg=#ff6ef3'
@@ -138,7 +145,8 @@ ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#d695b8'
 ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=#d695d1'
 ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=#d695d1'
 
-
+# To style the builtin commands
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=#d695d1'
 
 
 
