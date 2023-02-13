@@ -110,7 +110,8 @@ source $ZSH/oh-my-zsh.sh
 # ----------------------------- ALIASES -------------------------------------
 alias icat='kitty +kitten icat'
 alias pserver='sudo python3 -m http.server'
-alias uzshrep='cp ~/.zshrc ~/Desktop/my-zsh-config/'
+alias uzshrep='cp ~/.zshrc ~/.p10k.zsh ~/Desktop/my-zsh-config/'
+alias dirkill='rm -rfd'
 
 # ----------------------------- SYNTAX HIGHLIGHTER CONFIG ---------------------------------- 
 
@@ -118,15 +119,15 @@ alias uzshrep='cp ~/.zshrc ~/Desktop/my-zsh-config/'
 typeset -A ZSH_HIGHLIGHT_STYLES
 
 # To style the unknown or error tokens
-ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=#cf34be'
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=#985a85'
 
 # To style the aliases
-ZSH_HIGHLIGHT_STYLES[alias]='fg=#c76eff'
-ZSH_HIGHLIGHT_STYLES[global-alias]='fg=#c76eff'
+ZSH_HIGHLIGHT_STYLES[alias]='fg=#a867e4,bold'
+ZSH_HIGHLIGHT_STYLES[global-alias]='fg=#a867e4,bold'
 
 # To style the commands
-ZSH_HIGHLIGHT_STYLES[command]='fg=#c76eff'
-ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=#c76eff'
+ZSH_HIGHLIGHT_STYLES[command]='fg=#a867e4,bold'
+ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=#a867e4,bold'
 
 # To style the pre commands (sudo, exec)
 ZSH_HIGHLIGHT_STYLES[precommand]='fg=#ff6ef3'
