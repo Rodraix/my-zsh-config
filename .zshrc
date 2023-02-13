@@ -79,6 +79,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
    zsh-syntax-highlighting
+   zsh-autosuggestions
    git
 )
 
@@ -128,6 +129,7 @@ ZSH_HIGHLIGHT_STYLES[global-alias]='fg=#a867e4,bold'
 # To style the commands
 ZSH_HIGHLIGHT_STYLES[command]='fg=#a867e4,bold'
 ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=#a867e4,bold'
+ZSH_HIGHLIGHT_STYLES[function]='fg=#a867e4,bold'
 
 # To style the pre commands (sudo, exec)
 ZSH_HIGHLIGHT_STYLES[precommand]='fg=#ff6ef3'
